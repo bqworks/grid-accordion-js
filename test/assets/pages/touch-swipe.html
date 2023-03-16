@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Grid Accordion</title>
+
+<link rel="stylesheet" type="text/css" href="../../../src/core/grid-accordion.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="../../../src/core/buttons.css" media="screen"/>
+
+<script type="module">
+	import GridAccordion from '../../../src/core/grid-accordion.js';
+	import TouchSwipe from '../../../src/add-ons/touch-swipe/touch-swipe.js';
+	import Buttons from '../../../src/add-ons/buttons/buttons.js';
+
+	document.addEventListener( 'DOMContentLoaded', () => {
+		const accordion = new GridAccordion( '#my-accordion', {
+			addOns: [ TouchSwipe, Buttons ],
+			width: '100vw',
+			height: '100vh',
+			rows: 2,
+			columns: 2
+		});
+	});
+</script>
+</head>
+
+<body>
+	<div id="my-accordion" class="grid-accordion">
+		<div class="ga-panels">
+			<div class="ga-panel">
+				<img class="ga-background" src="../images/default.gif"/>
+			</div>
+			<div class="ga-panel">
+				<img class="ga-background" src="../images/default.gif"/>
+			</div>
+			<div class="ga-panel">
+				<img class="ga-background" src="../images/default.gif"/>
+			</div>
+			<div class="ga-panel">
+				<img class="ga-background" src="../images/default.gif"/>
+			</div>
+			<div class="ga-panel">
+				<img class="ga-background" src="../images/default.gif"/>
+			</div>
+			<div class="ga-panel">
+				<img class="ga-background" src="../images/default.gif"/>
+			</div>
+			<div class="ga-panel">
+				<img class="ga-background" src="../images/default.gif"/>
+			</div>
+			<div class="ga-panel">
+				<img class="ga-background" src="../images/default.gif"/>
+			</div>
+			<div class="ga-panel">
+				<img class="ga-background" src="../images/default.gif"/>
+			</div>
+			<div class="ga-panel">
+				<img class="ga-background" src="../images/default.gif"/>
+			</div>
+		</div>
+    </div>
+</body>
+</html>

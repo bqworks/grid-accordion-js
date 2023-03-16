@@ -1,0 +1,84 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+}
+
+#example1 .panel-counter {
+	padding: 5px;
+	font-size: 16px;
+	color: #333;
+}
+
+@media (max-width: 860px) {
+	#example1.custom-responsive .panel-counter {
+		font-size: 16px;
+		padding: 2px;
+		bottom: 2px !important;
+		left: 2px !important;
+	}
+
+	#example1.custom-responsive .hide-medium-screen {
+		display: none !important;
+	}
+}
+
+@media (max-width: 640px) {
+	#example1.custom-responsive .ga-layer {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 450px) {
+	#example1.custom-responsive .ga-layer {
+		font-size: 10px;
+		padding: 2px;
+	}
+}
+
+#example3 .text {
+	padding: 15px;
+	background-color: #f1f1f1;
+	color: #222;
+}
+
+#example3 .title {
+	font-size: 24px;
+	margin: 0;
+}
+
+#example3 .description {
+	font-size: 14px;
+	line-height: 1.2;
+}
+
+#example3 .link {
+	position: absolute;
+	bottom: 0;
+}
+
+#example3 .link a {
+	color: #000;
+}
+
+#example3 iframe {
+	vertical-align: bottom;
+}
+
+#example-xml .ga-panel-counter {
+	padding: 5px;
+	font-size: 16px;
+	color: #333;
+}
+
+.controls {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.controls a {
+	color: #333;
+}
+
+.controls span.custom-arrow {
+	display: none;
+}

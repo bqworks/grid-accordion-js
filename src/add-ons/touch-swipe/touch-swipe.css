@@ -1,0 +1,13 @@
+/* Touch Swipe
+-------------------------------------------------- */
+.ga-grab {
+	cursor: url("images/openhand.cur"), move;
+}
+
+.ga-grabbing {
+	cursor: url("images/closedhand.cur"), move;
+}
+
+.ga-selectable {
+	cursor: default;
+}

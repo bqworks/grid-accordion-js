@@ -1,0 +1,83 @@
+.grid-accordion {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.grid-accordion * {
+	-webkit-tap-highlight-color: transparent;
+}
+
+.ga-mask {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.ga-panels {
+	position: absolute;
+}
+
+.ga-horizontal .ga-panels {
+	height: 100%;
+}
+
+.ga-vertical .ga-panels {
+	width: 100%;
+}
+
+.ga-panel {
+	position: absolute;
+	overflow: hidden;
+}
+
+.ga-shadow {
+	box-shadow: -5px 0 40px 1px #000;
+}
+
+.ga-background,
+.ga-background-opened {
+	border: none;
+	vertical-align: bottom;
+	width: auto;
+	height: auto;
+}
+
+.ga-background-opened {
+	position: absolute;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+}
+
+.ga-no-js {
+	overflow: hidden;
+	max-width: 100%;
+}
+
+.grid-accordion .ga-background,
+.grid-accordion .ga-background-opened {
+	border: none !important;
+	border-radius: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	box-shadow: none !important;
+	transition: none;
+}
+
+.grid-accordion a {
+	position: static;
+	transition: none !important;
+}
+
+.grid-accordion .ga-background,
+.grid-accordion .ga-background-opened,
+.grid-accordion iframe,
+.grid-accordion object,
+.grid-accordion video,
+.grid-accordion embed,
+.grid-accordion canvas {
+	max-width: none;
+	max-height: none;
+}

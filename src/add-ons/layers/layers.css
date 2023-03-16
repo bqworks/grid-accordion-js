@@ -1,0 +1,31 @@
+.ga-layer {
+	position: absolute;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+.ga-black {
+	color: #fff;
+	background: rgb(0 0 0);
+	background: rgba(0 0 0 / 70%);
+}
+
+.ga-white {
+	color: #000;
+	background: rgb(255 255 255);
+	background: rgba(255 255 255 / 70%);
+}
+
+.ga-rounded {
+	border-radius: 10px;
+}
+
+.ga-padding {
+	padding: 10px;
+}
+
+.ga-layer.ga-vertical {
+	transform-origin: left bottom;
+	transform: rotate(-90deg) translateY(100%);
+}
