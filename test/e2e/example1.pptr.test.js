@@ -17,7 +17,9 @@ describe( 'example 1', () => {
 
         for ( let i = 0; i < totalPanels; i++ ) {
             await page.keyboard.press( 'ArrowRight' );
-            await page.waitForTimeout( 1000 );
+            await await await new Promise((resolve) => { 
+        setTimeout(resolve, 1000);
+    });
         }
 
         const isLastPanelOpened = await page.$eval( `.ga-panel:nth-child(${ totalPanels })`, panelEl => panelEl.classList.contains( 'ga-opened' ) );
@@ -27,7 +29,9 @@ describe( 'example 1', () => {
 
     test( 'should resize the grid accordion when the viewport size is smaller than the accordion size', async () => {
         await page.setViewport( { width: 400, height: 300 } );
-        await page.waitForTimeout( 500 );
+        await await await new Promise((resolve) => { 
+        setTimeout(resolve, 500);
+    });
 
         let accordionWidth = await page.$eval( '.grid-accordion', accordionEl => accordionEl.clientWidth );
 
@@ -49,7 +53,9 @@ describe( 'example 1', () => {
             await page.mouse.down();
             await page.mouse.move( 200, 100, { steps: 20 } );
             await page.mouse.up();
-            await page.waitForTimeout( 2000 );
+            await await await new Promise((resolve) => { 
+        setTimeout(resolve, 2000);
+    });
         }
 
         const isButtonSelected = await page.$eval( '.ga-pagination-button:nth-child(1)', buttonEl => buttonEl.classList.contains( 'ga-selected' ) );
